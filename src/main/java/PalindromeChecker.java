@@ -46,7 +46,7 @@ public String reverse(String str)
 {
     String sNew = new String();
     for(int i = str.length(); i > 0; i--){
-      if(Character.isLetter(str.charAt(i))){
+      if(Character.isLetter(str.charAt(i-1))){
         sNew = sNew + str.substring(i-1, i);
       }
     }
